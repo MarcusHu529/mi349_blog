@@ -9,6 +9,58 @@
     p {text-align: center;}
     div {text-align: center;}
     h2 {text-align: center; font-size: 16px;}
+    hr { /* A simple style for the line separating posts */
+        border: 0;
+        height: 1px;
+        background: #ccc;
+        width: 800px;
+        margin: 60px auto;
+    }
+    table {
+        width: 800px;
+        margin: 30px auto;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    th, td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    .newsletter-signup {
+        width: 800px;
+        margin: 60px auto;
+        padding-top: 40px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+    .newsletter-signup h3 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: #333;
+    }
+    .newsletter-signup input[type="email"] {
+        padding: 12px 15px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .newsletter-signup button {
+        padding: 12px 25px;
+        background-color: #555;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .newsletter-signup button:hover {
+        background-color: #333;
+    }
     </style>
 </head>
 <body>
@@ -19,20 +71,86 @@
 
     <nav>
         <ul>
-            <h2><a href="index.html">Home</a>&nbsp      
-                <a href="about.html">About</a>&nbsp      
+            <h2><a href="index.html">Home</a>&nbsp       
+                <a href="about.html">About</a>&nbsp       
                 <a href="contact.html">Contact</a>
             </h2>
         </ul>
     </nav>
 
     <main>
-        <section>
+        <article>
+            <hr>
             <p>Published on September 26, 2025 by Weihang Hu.</p>
+            <div style="position: relative; width: 800px; margin: 40px auto 0 auto;">
+                <h2 style="position: absolute; top: -25px; left: 0; text-align: left; margin: 0;">The First Step: Learning HTML in High School</h2>
+                <img src="blog1.png" alt="Front End Developer" width="800" height="450" style="display: block;">
+            </div>
+            <p style="width: 800px; margin: 20px auto; text-align: left;">
+                My journey into front-end development didn't begin with complex frameworks or intricate codebases, 
+                but in a high school classroom with the simple elegance of HTML. I still remember the magic of writing my 
+                first h1 tag, saving the file, and seeing my own text appear on a blank web page. It was a powerful realization: 
+                with just a few lines of code, I could create something from nothing. That initial spark of creation was all it 
+                took to get me hooked on the power of building for the web.That curiosity quickly grew beyond basic tags. I realized 
+                HTML was the fundamental building block of the digital world I interacted with daily. This wasn't just a school assignment; 
+                it was a gateway. I wanted to learn how to add style, create interactions, and build the dynamic websites I used every day. 
+                That simple foundation became the first step on a much larger map I was eager to explore.Now, years later, that journey 
+                has led me here. The path from those first few tags can be daunting, so this roadmap is my effort to chart that course for 
+                others—to help anyone standing at that same starting line turn a little curiosity into a confident career.
+            </p>
+        </article>
 
-            <img src="image.png" alt="Front End Developer" width="800" height="450" style="display: block; margin-left: auto; margin-right: auto;">
-            
-        </section>
+        <hr>
+
+        <article>
+            <p>Published on September 27, 2025 by Weihang Hu.</p>
+            <div style="position: relative; width: 800px; margin: 40px auto 0 auto;">
+                <h2 style="position: absolute; top: -25px; left: 0; text-align: left; margin: 0;">Taking web design class in College</h2>
+                <img src="blog2.png" alt="Front End Developer" width="800" height="450" style="display: block;">
+            </div>
+            <p style="width: 800px; margin: 20px auto; text-align: left;">
+                Choosing to take MI349 was a conscious step towards turning a long-held interest into a tangible skill set. While my previous HTML knowledge was a good start, I knew I needed to understand how individual skills connect within a professional workflow. Even though the semester has just begun, the impact has been immediate. It’s one thing to know isolated pieces of code, but it’s another to grasp the modern process of a web professional, and this course is already bridging that gap. The curriculum has quickly moved beyond theory and into the practical tools that power today's web, providing a clear context for how development gets done in the real world.
+                <br><br>
+                Two of the most transformative tools so far have been Figma and Netlify. Figma has completely changed my approach to building projects by championing a “design-first” mentality that emphasizes user experience before writing a single line of code. Creating a visual blueprint first is invaluable; it helps clarify abstract ideas and prevents hours of wasted effort on coding guesswork. Then, there's Netlify, which demystified the entire process of deployment. The ability to push my code from my computer and see it live on the web in minutes is incredibly empowering and removes a huge technical barrier, fostering the confidence needed for rapid experimentation. These tools have solidified my ambition; I don't just want to learn web development, I want to pursue it as a career, and MI349 is providing the roadmap to get there.
+            </p>
+        </article>
+
+        <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Experience Level</th>
+                        <th>Average Annual Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2015</td>
+                        <td>Entry-Level</td>
+                        <td>$75,000</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Mid-Level</td>
+                        <td>$105,000</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Senior-Level</td>
+                        <td>$130,000</td>
+                    </tr>
+                </tbody>
+            </table>
     </main>
+    <footer>
+        <div class="newsletter-signup">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p style="margin-bottom: 20px; color: #666;">Get the latest posts and updates delivered to your inbox.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
