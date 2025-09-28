@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body style="text-align: center;">
+    <h1>Contact Me</h1>
+    <p>Have a question or want to work together?</p>
+    <p>Fill out the form below.</p>
+    
+    <form action="#" method="POST" onsubmit="event.preventDefault();" style="display: inline-block; text-align: left;">
+        
+
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required placeholder="Your Name">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="email">Email address</label><br>
+            <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="reason">Reason for contact</label><br>
+            <select id="reason" name="reason" required>
+                <option value="" disabled selected>Please select a reason</option>
+                <option value="greeting">Saying hi</option>
+                <option value="contractor">Looking for a contractor</option>
+                <option value="interview">Interested in an interview</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="comment">Comment</label><br>
+            <textarea id="comment" name="comment" rows="4" required placeholder="Your message..."></textarea>
+        </div>
+        <br>
+
+        <!-- Submit Button -->
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
