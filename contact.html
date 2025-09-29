@@ -9,65 +9,69 @@
         p {text-align: center;}
         div {text-align: center;}
         h2 {text-align: center; font-size: 16px;}
+        html { overflow-y: scroll; }
+        
+        /* Note: Style for the corrected navigation list */
+        nav ul { list-style-type: none; margin: 0; padding: 0; }
+        nav li { display: inline; }
     </style>
-</head>
 </head>
 <body style="text-align: center;">
     <header>
         <h1> Front End Developer Roadmap</h1>
     </header>
+    
     <nav>
         <ul>
-            <h2><a href="index.html">Home</a>&nbsp      
-                <a href="about.html">About</a>&nbsp      
-                <a href="contact.html">Contact</a>
-            </h2>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <h2>Contact Me</h2>
 
-    <p>Have a question or want to work together?</p>
-    <p>Fill out the form below.</p>
-    
-    <form action="#" method="POST" onsubmit="event.preventDefault();" style="display: inline-block; text-align: left;">
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+
+            <p>Have a question or want to work together?</p>
+            <p>Fill out the form below.</p>
+            
+            <form action="#" method="POST" onsubmit="event.preventDefault();" style="display: inline-block; text-align: left;">
+                
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Your Name">
+                </div>
+                <br>
         
-
-        <div>
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" required placeholder="Your Name">
-        </div>
-        <br>
-
-
-        <div>
-            <label for="email">Email address</label><br>
-            <input type="email" name="email" id="email" required placeholder="you@example.com">
-        </div>
-        <br>
-
-
-        <div>
-            <label for="reason">Reason for contact</label><br>
-            <select id="reason" name="reason" required>
-                <option value="" disabled selected>Please select a reason</option>
-                <option value="greeting">Saying hi</option>
-                <option value="contractor">Looking for a contractor</option>
-                <option value="interview">Interested in an interview</option>
-            </select>
-        </div>
-        <br>
-
-        <div>
-            <label for="comment">Comment</label><br>
-            <textarea id="comment" name="comment" rows="4" required placeholder="Your message..."></textarea>
-        </div>
-        <br>
-
-        <!-- Submit Button -->
-        <div style="text-align: center;">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+                <div>
+                    <label for="email">Email address</label><br>
+                    <input type="email" name="email" id="email" required placeholder="you@example.com">
+                </div>
+                <br>
+        
+                <div>
+                    <label for="reason">Reason for contact</label><br>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Please select a reason</option>
+                        <option value="greeting">Saying hi</option>
+                        <option value="contractor">Looking for a contractor</option>
+                        <option value="interview">Interested in an interview</option>
+                    </select>
+                </div>
+                <br>
+        
+                <div>
+                    <label for="comment">Comment</label><br>
+                    <textarea id="comment" name="comment" rows="4" required placeholder="Your message..."></textarea>
+                </div>
+                <br>
+        
+                <div style="text-align: center;">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
-
