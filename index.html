@@ -165,14 +165,19 @@
     </main>
     
     <footer>
-        <form name="contact" method="POST" data-netlify="true">
-            <h3>Subscribe to Our Newsletter</h3>
-            <p style="margin-bottom: 20px; color: #666;">Get the latest posts and updates delivered to your inbox.</p>
-            <form action="#" method="post">
+        <div class="newsletter-signup">
+            <form name="newsletter" method="POST" data-netlify="true">
+                
+                <input type="hidden" name="form-name" value="newsletter" />
+                
+                <h3>Subscribe to Our Newsletter</h3>
+                <p style="margin-bottom: 20px; color: #666;">Get the latest posts and updates delivered to your inbox.</p>
+                
                 <input type="email" name="email" placeholder="Enter your email address" required>
                 <button type="submit">Subscribe</button>
+
             </form>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
